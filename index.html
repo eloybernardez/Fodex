@@ -46,7 +46,7 @@
 
           <select name="language-select" id="language-list">
             <optgroup id="language-list">
-              <option value="">english</option>
+              <option value="" selected>english</option>
               <option value="">spanish</option>
               <option value="">german</option>
               <option value="">french</option>
@@ -141,9 +141,9 @@
         <div class="contact-reseller__contact">
           <input
             type="email"
-            placeholder="Enter your email to get more details" name="email"
+            placeholder="Enter your email to get more details" name="email" autocomplete="email"
           />
-          <button>
+          <button type="submit">
             <i class="fa-solid fa-right-long"></i>
           </button> 
         </div>

@@ -1,2 +1,10 @@
 # Fodex
-a landing page of a crypto exchange (O/ HTML and CSS)
+
+Fodex is a cypto exchange landing page made with: 
+
+* HTML5
+* CSS3
+* Flexbox
+* Grid
+* Mobile First
+* Responsive Design

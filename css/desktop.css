@@ -1,0 +1,21 @@
+main .hero {
+  margin-top: 10px;
+}
+
+.hero__texts {
+  padding-left: 15px;
+}
+
+.hero__texts .hero__texts__cta {
+  justify-content: flex-start;
+}
+
+.card-container__card {
+  margin-right: 0;
+}
+
+.service-description__card-container {
+  width: 100%;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}

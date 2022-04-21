@@ -1,0 +1,352 @@
+:root {
+  --primary-blue: #222744;
+  --bar-divider: #4d517e;
+  --primary-brown: #7f6d61;
+  --font-blue: #999ec4;
+  --font-nav: #818caa;
+  --font-base: #dce2ef;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: linear-gradient(
+    to bottom,
+    #232845,
+    #242545,
+    #252244,
+    #271e43,
+    #291a41
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "MuseoModerno", cursive;
+  color: var(--font-base);
+  scroll-behavior: smooth;
+}
+/*---------HEADER-----------*/
+
+header {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header .logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 35%;
+  height: 100%;
+  min-width: 100px;
+  max-width: 150px;
+}
+
+header .logo-container img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+header .logo-container figcaption {
+  width: 40%;
+  font-weight: 300;
+  font-size: 1.1rem;
+  margin-left: 3px;
+}
+
+header .navbar {
+  min-width: 150px;
+}
+
+header .navbar .navbar__list {
+  display: flex;
+}
+
+header .navbar .navbar__list .navbar__list--item {
+  padding: 0 5px;
+}
+
+header .navbar .navbar__list .navbar__list--item a {
+  color: var(--font-nav);
+}
+header .search-area {
+  display: none;
+}
+
+/*---------MAIN-----------*/
+main .hero {
+  display: grid;
+  width: 90%;
+  margin: 0 auto;
+  /* padding-left: 10px; */
+  justify-items: center;
+  grid-template: 1fr / repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.hero .hero__texts .hero__texts__line {
+  font-size: 4rem;
+  color: var(--bar-divider);
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+
+.hero__texts {
+  width: 80%;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 700px;
+}
+
+.hero__texts .hero__texts__description {
+  font-size: 1.4rem;
+  margin: 8px;
+  font-weight: 500;
+  line-height: 2rem;
+  color: #7c7b9d;
+}
+
+.hero__texts .hero__texts__cta {
+  display: flex;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-top: 25px;
+  color: var(--font-base);
+}
+
+.hero__texts .hero__texts__cta div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.hero__texts .hero__texts__cta div i {
+  font-size: 1.8rem;
+  color: #e1b693;
+}
+
+.hero__texts .hero__texts__cta div .fa-angle-down {
+  font-size: 1rem;
+}
+
+.hero__criptos img {
+  display: none;
+}
+
+/*------SECTION 2-------*/
+
+main .service-description {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.service-description .service-description__description {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.service-description .service-description__description h2 {
+  width: 85%;
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+
+.service-description .service-description__description p:last-child {
+  width: 65%;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.service-description .service-description__description__line {
+  font-size: 4rem;
+  color: #a4dcda;
+}
+
+.service-description__card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  /* align-items: center; */
+  position: relative;
+}
+
+.card-container__card {
+  width: 70%;
+  height: auto;
+  min-width: 200px;
+  max-width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  background-image: linear-gradient(
+    to bottom,
+    #262f4c,
+    #222a45,
+    #1f263e,
+    #1b2138,
+    #181d31
+  );
+}
+
+.card-container__card h4 {
+  font-weight: 500;
+  font-size: 1.6rem;
+  padding: 10px 0;
+}
+.card-container__card p {
+  color: #7c7b9d;
+}
+
+.card__img {
+  width: 150px;
+  object-fit: cover;
+}
+
+.card__img--system,
+.card__img--wallet {
+  bottom: 45px;
+}
+
+.card__img--radius {
+  height: 130px;
+  border-radius: 20px;
+}
+
+/*------SECTION 3-------*/
+
+.contact-reseller {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 85%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.contact-reseller .contact-reseller__line {
+  font-size: 4rem;
+  color: #8d598a;
+}
+
+.contact-reseller h3 {
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+.contact-reseller span {
+  color: #2472d6;
+}
+
+.contact-reseller .contact-reseller__subtitle {
+  font-size: 1.2rem;
+  margin: 15px 0;
+  color: #7c7b9d;
+}
+
+.contact-reseller .contact-reseller__contact {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  min-width: 260px;
+  max-width: 350px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  height: 47px;
+  background-color: white;
+}
+
+.contact-reseller .contact-reseller__contact:focus-within {
+  border: 2px solid #e1b693;
+}
+
+.contact-reseller .contact-reseller__contact input {
+  min-width: 200px;
+  width: 90%;
+  padding: 8px;
+  border: none;
+  outline: none;
+}
+
+.contact-reseller .contact-reseller__contact button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.contact-reseller .contact-reseller__contact button i {
+  width: 30px;
+  height: auto;
+  color: var(--bar-divider);
+}
+
+/*---------FOOTER-----------*/
+
+footer {
+  background-color: #7762ef;
+  color: var(--font-base);
+}
+
+footer ul a {
+  color: var(--font-base);
+}
+
+footer .links .links__list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 15px;
+  font-size: 1.1rem;
+}
+
+footer .links .links__logo {
+  width: 15%;
+  max-width: 70px;
+  margin-top: 8px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+footer .links .links__rights {
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+footer .social-media {
+  padding-bottom: 20px;
+}
+
+footer .social-media .social-media__list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer .social-media i {
+  color: #e1b693;
+  font-size: 3rem;
+}

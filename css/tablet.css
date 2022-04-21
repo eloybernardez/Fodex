@@ -1,0 +1,137 @@
+:root {
+  --primary-blue: #222744;
+  --bar-divider: #4d517e;
+  --primary-brown: #7f6d61;
+  --font-blue: #999ec4;
+  --font-nav: #818caa;
+  --font-base: #dce2ef;
+}
+
+header .search-area {
+  display: blocK;
+}
+
+.search-area .search-area__languages {
+  border: none;
+  outline: none;
+  margin-right: 5px;
+}
+
+.search-area .search-area__languages option,
+.search-area .search-area__languages select {
+  border: none;
+  outline: none;
+  font-family: "MuseoModerno", cursive;
+  font-weight: 300;
+  background-color: var(--primary-blue);
+  color: var(--font-base);
+  font-size: 1rem;
+}
+
+.search-area .search-area__login {
+  margin-left: 5px;
+  padding: 7px;
+  border: 1px solid #6d73c3;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.search-area .search-area__login a {
+  color: var(--font-base);
+  font-family: "MuseoModerno", cursive;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+main .hero {
+  width: 100%;
+}
+
+.hero__criptos {
+  position: relative;
+  perspective: 10px;
+  perspective-origin: 50%;
+  /* overflow-x: hidden;
+  overflow-y: scroll; */
+  transform: translateZ(0) scale(1);
+  background-image: linear-gradient(
+    to right bottom,
+    #2c3554,
+    #27304d,
+    #232a47,
+    #1e2540,
+    #1a203a
+  );
+  object-fit: cover;
+  background-position: center;
+  border-radius: 15px;
+  width: 100%;
+  min-width: 200px;
+  max-width: 400px;
+  height: auto;
+}
+
+.hero__criptos img {
+  display: block;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    to right bottom,
+    #424e73,
+    #3e4a6e,
+    #3a466a,
+    #364365,
+    #323f61
+  );
+  width: 150px;
+  background-position: center;
+  transform-origin: 50%;
+  margin: 0 auto;
+}
+
+.hero__criptos img:first-child {
+  position: absolute;
+  transform: translateZ(2px) scale(0.75) translateY(-50%);
+  top: 182px;
+  left: 70px;
+}
+
+.hero__criptos img:nth-child(2) {
+  position: absolute;
+  transform: translateZ(3px) scale(0.625) translateY(-60%);
+  top: 200px;
+  right: 74px;
+}
+
+.hero__criptos img:nth-child(3) {
+  position: absolute;
+  transform: translateZ(4px) scale(0.5) translateY(-30%);
+  top: 105px;
+  right: 68px;
+}
+
+.hero__criptos img:nth-child(4) {
+  position: absolute;
+  transform: translateZ(5px) scale(0.375) translateY(-20%);
+  top: 75px;
+  left: 100px;
+}
+
+.hero__criptos img:nth-child(5) {
+  position: absolute;
+  transform: translateZ(5px) scale(0.25) translateY(-15%);
+  top: 60px;
+  right: 60px;
+}
+
+.contact-reseller {
+  align-items: flex-start;
+}
+
+.contact-reseller .contact-reseller__subtitle {
+  max-width: 350px;
+}
+
+footer .links .links__list {
+  flex-direction: row;
+  justify-content: space-evenly;
+}

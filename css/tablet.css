@@ -65,7 +65,7 @@ main .hero {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #2a3352;
+  background-color: RGB(36, 39, 70);
   object-fit: cover;
   background-position: center;
   border-radius: 15px;
@@ -95,14 +95,14 @@ main .hero {
 .hero__criptos img:first-child {
   position: absolute;
   transform: translateZ(2px) scale(0.75) translateY(-50%);
-  top: 182px;
-  left: 70px;
+  top: 210px;
+  left: 45px;
 }
 
 .hero__criptos img:nth-child(2) {
   position: absolute;
   transform: translateZ(3px) scale(0.625) translateY(-60%);
-  top: 200px;
+  top: 215px;
   right: 74px;
 }
 
@@ -110,21 +110,21 @@ main .hero {
   position: absolute;
   transform: translateZ(4px) scale(0.5) translateY(-30%);
   top: 95px;
-  right: 83px;
+  right: 70px;
 }
 
 .hero__criptos img:nth-child(4) {
   position: absolute;
   transform: translateZ(5px) scale(0.375) translateY(-20%);
   top: 75px;
-  left: 100px;
+  left: 95px;
 }
 
 .hero__criptos img:nth-child(5) {
   position: absolute;
   transform: translateZ(5px) scale(0.25) translateY(-15%);
-  top: 60px;
-  right: 60px;
+  top: 50px;
+  right: 45px;
 }
 
 .contact-reseller {

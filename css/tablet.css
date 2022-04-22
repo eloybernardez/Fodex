@@ -45,23 +45,27 @@ header .search-area {
 
 main .hero {
   width: 100%;
+  margin-top: 20px;
 }
 
 .hero__criptos {
   position: relative;
   perspective: 10px;
   perspective-origin: 50%;
-  /* overflow-x: hidden;
-  overflow-y: scroll; */
   transform: translateZ(0) scale(1);
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to right bottom,
     #2c3554,
     #27304d,
     #232a47,
     #1e2540,
     #1a203a
-  );
+  ); */
+  background-image: url("/assets/background-hero.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #2a3352;
   object-fit: cover;
   background-position: center;
   border-radius: 15px;
@@ -105,8 +109,8 @@ main .hero {
 .hero__criptos img:nth-child(3) {
   position: absolute;
   transform: translateZ(4px) scale(0.5) translateY(-30%);
-  top: 105px;
-  right: 68px;
+  top: 95px;
+  right: 83px;
 }
 
 .hero__criptos img:nth-child(4) {

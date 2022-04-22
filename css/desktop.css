@@ -49,10 +49,6 @@
   animation-timing-function: cubic-bezier(0.13, 0.52, 0.46, 0.84);
 }
 
-main .hero {
-  margin-top: 10px;
-}
-
 .hero__texts {
   padding-left: 15px;
 }
@@ -100,4 +96,34 @@ main .hero {
   width: 100%;
   justify-content: space-evenly;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 1400px) {
+  .hero__criptos {
+    max-width: 600px;
+  }
+
+  .hero__criptos img:first-child {
+    top: 195px;
+    left: 140px;
+  }
+
+  .hero__criptos img:nth-child(2) {
+    right: 0;
+    /* left: 115px; */
+    right: 130px;
+  }
+
+  .hero__criptos img:nth-child(3) {
+    right: 200px;
+  }
+
+  .hero__criptos img:nth-child(4) {
+    left: 180px;
+    top: 50px;
+  }
+
+  .hero__criptos img:nth-child(5) {
+    right: 130px;
+  }
 }

@@ -7,14 +7,38 @@
   --font-base: #dce2ef;
 }
 
+header {
+  height: 50px;
+}
+
+header .navbar {
+  min-width: 150px;
+}
+
+header .navbar .navbar__list {
+  flex-direction: row;
+  height: 50px;
+}
+
 header .search-area {
-  display: blocK;
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 10px;
+}
+
+header .navbar .navbar__list .navbar__list--item a {
+  font-size: 1.3rem;
 }
 
 .search-area .search-area__languages {
   border: none;
   outline: none;
   margin-right: 5px;
+  background-color: var(--primary-blue);
+}
+
+header .navbar .navbar__list .navbar__list--item {
+  padding: 5px;
 }
 
 .search-area .search-area__languages option,
@@ -25,7 +49,7 @@ header .search-area {
   font-weight: 300;
   background-color: var(--primary-blue);
   color: var(--font-base);
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .search-area .search-area__login {
@@ -53,14 +77,6 @@ main .hero {
   perspective: 10px;
   perspective-origin: 50%;
   transform: translateZ(0) scale(1);
-  /* background-image: linear-gradient(
-    to right bottom,
-    #2c3554,
-    #27304d,
-    #232a47,
-    #1e2540,
-    #1a203a
-  ); */
   background-image: url("/assets/background-hero.png");
   background-position: center;
   background-repeat: no-repeat;

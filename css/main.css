@@ -363,7 +363,7 @@ footer .social-media i {
   font-size: 3rem;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 360px) {
   header .navbar .navbar__list {
     flex-direction: row;
     width: 250px;
